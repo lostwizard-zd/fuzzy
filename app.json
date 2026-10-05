@@ -1,0 +1,79 @@
+{
+  "name": "Wizard",
+  "description": "Wizard Telegram Music Player Bot, written in Python with Pyrofork and PyTgCalls.",
+  "keywords": [
+    "python",
+    "telegram",
+    "bot",
+    "Wizard",
+    "MusicBot",
+    "telegram-bot",
+    "pyrofork"
+  ],
+  "env": {
+    "API_ID": {
+      "description": "Telegram API ID from my.telegram.org",
+      "value": "",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "Telegram API hash from my.telegram.org",
+      "value": "",
+      "required": true
+    },
+    "BOT_TOKEN": {
+      "description": "Bot token from @BotFather",
+      "value": "",
+      "required": true
+    },
+    "MONGO_DB_URI": {
+      "description": "MongoDB connection URI",
+      "value": "",
+      "required": true
+    },
+    "OWNER_ID": {
+      "description": "Primary owner Telegram user ID",
+      "value": "",
+      "required": true
+    },
+    "LOGGER_ID": {
+      "description": "Telegram log group/channel ID",
+      "value": "",
+      "required": true
+    },
+    "STRING_SESSION": {
+      "description": "Primary assistant Pyrogram string session",
+      "value": "",
+      "required": true
+    },
+    "STRING_SESSION2": {
+      "description": "Optional second assistant session",
+      "value": "",
+      "required": false
+    },
+    "STRING_SESSION3": {
+      "description": "Optional third assistant session",
+      "value": "",
+      "required": false
+    },
+    "STRING_SESSION4": {
+      "description": "Optional fourth assistant session",
+      "value": "",
+      "required": false
+    },
+    "STRING_SESSION5": {
+      "description": "Optional fifth assistant session",
+      "value": "",
+      "required": false
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    }
+  ],
+  "stack": "container"
+}

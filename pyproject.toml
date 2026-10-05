@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wizard-music-bot"
+version = "1.0.0"
+description = "Wizard Telegram music bot"
+requires-python = ">=3.10,<3.15"
+readme = ".GitHub/ReadMe.MD"
+license = {file = "LICENSE"}
+
+[tool.setuptools.packages.find]
+include = ["wizard*", "strings*"]

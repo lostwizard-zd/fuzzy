@@ -1,0 +1,27 @@
+# Secrets / sessions
+.env
+*.session
+*.session-journal
+cookies/
+cookies.txt
+*.cookies
+
+# Runtime
+.cache/
+cache/
+downloads/
+raw_files/
+playback/
+logs/
+log.txt
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Local tooling
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store
