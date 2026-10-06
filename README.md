@@ -124,23 +124,7 @@ Wizard was created to provide a clean and maintainable alternative to older Tele
 
 ---
 
-# 📸 Screenshots
 
-Store screenshots inside:
-
-```text
-assets/
-└── screenshots/
-    ├── banner.png
-    ├── player.png
-    ├── controls.png
-    ├── queue.png
-    └── settings.png
-```
-
-GitHub supports repository-relative image paths, so these images will continue to work when users clone or fork the repository.
-
----
 
 # 🚀 Installation
 
@@ -341,69 +325,6 @@ YTDLP_COOKIES_B64
 
 ---
 
-# 🏗️ Architecture
-
-```text
-                  ┌─────────────────┐
-                  │     Telegram    │
-                  └────────┬────────┘
-                           │
-                           ▼
-                  ┌─────────────────┐
-                  │      Wizard     │
-                  │   Bot Client    │
-                  └────────┬────────┘
-                           │
-              ┌────────────┼────────────┐
-              ▼            ▼            ▼
-         ┌─────────┐  ┌──────────┐  ┌─────────┐
-         │ Plugins │  │  Queue   │  │ Config  │
-         └────┬────┘  └────┬─────┘  └─────────┘
-              │            │
-              └──────┬─────┘
-                     ▼
-              ┌──────────────┐
-              │   yt-dlp     │
-              └──────┬───────┘
-                     │
-                     ▼
-              ┌──────────────┐
-              │   PyTgCalls  │
-              └──────┬───────┘
-                     │
-                     ▼
-              🔊 Telegram VC
-```
-
----
-
-# 📁 Project Structure
-
-```text
-Wizard-Music-Bot/
-│
-├── wizard/
-│   ├── core/
-│   ├── plugins/
-│   ├── config.py
-│   └── __main__.py
-│
-├── assets/
-│   └── screenshots/
-│
-├── .github/
-│   └── workflows/
-│
-├── .env.example
-├── .gitignore
-├── Dockerfile
-├── requirements.txt
-├── pyproject.toml
-├── LICENSE
-└── README.md
-```
-
----
 
 # 🧪 Development
 
