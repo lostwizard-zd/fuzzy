@@ -460,8 +460,7 @@ git push origin feature/my-feature
 Please include:
 
 ```text
-Python version:
-Wizard version:
+
 Deployment platform:
 Operating system:
 Error:
